@@ -1,0 +1,265 @@
+<div class="container-fluid section-light-gray pt-4" style="border-radius: 12px; border: 1px solid #bcc7d0;">
+  <div class="row widgetchart">
+    <div class="col-md-6 col-sm-12 col-lg-3">
+      <div class="card card-header-raised mb-3">
+        <div class="card-header card-header-icon" data-background-color="red">
+          <span style="font-size:16px;"><i class="ft ft-users"></i></span>
+          <span class="category-social pull-right align-items-center">$2156</span>
+          <div class="clearfix"></div>
+        </div>
+        <div class="card-body">
+
+          <div class="description">
+            <div id="Widget-line-chart" class="height-85 WidgetlineChart WidgetlineChartshadow mb-2">
+              <x-chartist class="" [data]="WidgetlineChart.data" [type]="WidgetlineChart.type"
+                          [options]="WidgetlineChart.options" [responsiveOptions]="WidgetlineChart.responsiveOptions"
+                          [events]="WidgetlineChart.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-lg-3">
+      <div class="card card-header-raised mb-3">
+        <div class="card-header card-header-icon" data-background-color="blue">
+          <span><i class="ft ft-hash"></i></span>
+          <span class="category-social pull-right">$2156</span>
+          <div class="clearfix"></div>
+        </div>
+        <div class="card-body">
+          <div class="description">
+            <div id="Widget-line-chart1" class="height-85 WidgetlineChart WidgetlineChartshadow mb-2">
+              <x-chartist class="" [data]="WidgetlineChart.data" [type]="WidgetlineChart.type"
+                          [options]="WidgetlineChart.options" [responsiveOptions]="WidgetlineChart.responsiveOptions"
+                          [events]="WidgetlineChart.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-lg-3">
+      <div class="card card-header-raised mb-3">
+        <div class="card-header card-header-icon" data-background-color="blue">
+          <span><i class="ft ft-hash"></i></span>
+          <span class="category-social pull-right">$2156</span>
+          <div class="clearfix"></div>
+        </div>
+        <div class="card-body">
+          <div class="description">
+            <div id="Widget-line-chart2" class="height-85 WidgetlineChart WidgetlineChartshadow mb-2">
+              <x-chartist class="" [data]="WidgetlineChart.data" [type]="WidgetlineChart.type"
+                          [options]="WidgetlineChart.options" [responsiveOptions]="WidgetlineChart.responsiveOptions"
+                          [events]="WidgetlineChart.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-lg-3">
+      <div class="card card-header-raised mb-3">
+        <div class="card-header card-header-icon" data-background-color="blue">
+          <span><i class="ft ft-hash"></i></span>
+          <span class="category-social pull-right">$2156</span>
+          <div class="clearfix"></div>
+        </div>
+        <div class="card-body">
+          <div class="description">
+            <div id="Widget-line-chart3" class="height-85 WidgetlineChart WidgetlineChartshadow mb-2">
+              <x-chartist class="" [data]="WidgetlineChart.data" [type]="WidgetlineChart.type"
+                          [options]="WidgetlineChart.options" [responsiveOptions]="WidgetlineChart.responsiveOptions"
+                          [events]="WidgetlineChart.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row"> <!-- dashboard line chart -->
+
+    <div class="col-xl-8 col-lg-12 col-12">
+      <div class="card card-header-raised md-3">
+        <div class="card-header card-header-icon" data-background-color="blue"><i class="ft ft-hash"></i>Product
+          Sales
+        </div>
+        <div class="card-body">
+          <div class="chart-info pull-right mb-2">
+            <span class="text-uppercase mr-3"><i class="fa fa-circle text-primary font-small-2 mr-1"></i> Sales</span>
+            <span class="text-uppercase"><i class="fa fa-circle deep-purple font-small-2 mr-1"></i> Visits</span>
+          </div>
+          <div class="clearfix"></div>
+          <div class="card-description">
+            <div id="line-area2" class="height-500 lineArea2">
+              <x-chartist class="" [data]="lineArea2.data" [type]="lineArea2.type" [options]="lineArea2.options"
+                          [responsiveOptions]="lineArea2.responsiveOptions" [events]="lineArea2.events">
+
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-12 col-12">
+      <div class="card mb-3" data-background-color="blue">
+        <div class="card-body">
+          <div class="">
+            <h5 class="author pull-left text-white">Statistics</h5>
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <ngb-tabset [justify]="'center'">
+                  <ngb-tab title="Week">
+                    <ng-template ngbTabContent>
+                      <div class="my-3 text-center">
+                        <a class="font-large-2 d-block mb-1 text-white">$ 78.89 <span
+                          class="ft-arrow-up font-large-2"></span></a>
+                        <span class="font-medium-1 text-white">Week-2   +15.44</span>
+                      </div>
+                      <div id="lineChart1" class="height-250 lineChart lineChartShadow">
+                        <x-chartist class="" [data]="lineChartWeek.data" [type]="lineChartWeek.type"
+                                    [options]="lineChartWeek.options"
+                                    [responsiveOptions]="lineChartWeek.responsiveOptions"
+                                    [events]="lineChartWeek.events">
+                        </x-chartist>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Month">
+                    <ng-template ngbTabContent>
+                      <div class="my-3 text-center">
+                        <a class="font-large-2 d-block mb-1 text-white">$ 78.89 <span
+                          class="ft-arrow-up font-large-2"></span></a>
+                        <span class="font-medium-1 text-white">Month-2   +15.44</span>
+                      </div>
+                      <div id="lineChart2" class="height-250 lineChart lineChartShadow">
+                        <x-chartist class="" [data]="lineChartMonth.data" [type]="lineChartMonth.type"
+                                    [options]="lineChartMonth.options"
+                                    [responsiveOptions]="lineChartMonth.responsiveOptions"
+                                    [events]="lineChartMonth.events">
+                        </x-chartist>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- dashboard line chart ends -->
+
+  <div class="row">
+
+    <div class="col-md-6 col-lg-6">
+      <div class="card mb-3" data-background-color="light-azure">
+        <div class="card-body">
+          <div class="description">
+            <div id="Stackbarchart" class="height-250 Stackbarchart">
+              <x-chartist class="" [data]="Stackbarchart.data" [type]="Stackbarchart.type"
+                          [options]="Stackbarchart.options"
+                          [responsiveOptions]="Stackbarchart.responsiveOptions" [events]="Stackbarchart.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-6">
+      <div class="card mb-3" data-background-color="">
+        <div class="card-body">
+          <div class="description">
+            <div id="donut-dashboard-chart" class="height-250 donut">
+              <x-chartist class="" [data]="DonutChart.data" [type]="DonutChart.type" [options]="DonutChart.options"
+                          [responsiveOptions]="DonutChart.responsiveOptions"
+                          [events]="DonutChart.events">
+              </x-chartist>
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="row mb-3">
+              <div class="col">
+                <span class="mb-1 text-muted d-block">23% - Started</span>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 23%;" aria-valuenow="23"
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col">
+                <span class="mb-1 text-muted d-block">14% - In Progress</span>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 14%;" aria-valuenow="14"
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col">
+                <span class="mb-1 text-muted d-block">35% - Remaining</span>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar bg-info bg-lighten-1" role="progressbar" style="width: 35%;"
+                       aria-valuenow="35" aria-valuemin="0"
+                       aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col">
+                <span class="mb-1 text-muted d-block">28% - Done</span>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 28%;" aria-valuenow="28"
+                       aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="description">
+            <div id="lineArea" class="height-250 lineArea">
+              <x-chartist class="" [data]="lineArea.data" [type]="lineArea.type" [options]="lineArea.options"
+                          [responsiveOptions]="lineArea.responsiveOptions" [events]="lineArea.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-3">
+        <div class="card-header">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+        <div class="card-body">
+          <div class="description">
+            <div id="BarChart" class="height-250 BarChart">
+              <x-chartist class="" [data]="BarChart.data" [type]="BarChart.type" [options]="BarChart.options"
+                          [responsiveOptions]="BarChart.responsiveOptions" [events]="BarChart.events">
+              </x-chartist>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-transparent">
+  <div class="container-fluid padding-sidebar">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+            (click)="sidebarLeftOpen()">
+      <span class="navbar-toggler-bar"></span>
+      <span class="navbar-toggler-bar"></span>
+      <span class="navbar-toggler-bar"></span>
+    </button>
+    <a class="navbar-brand d-lg-none d-md-flex" href="#">Angular 5</a>
+    <form class="form-inline d-none d-md-inline-flex ">
+      <div class="input-group form-group-bottom-border">
+        <input class="form-control" placeholder="Email" type="text">
+        <span class="input-group-addon">
+          <i class="nc-icon nc-zoom-split"></i>
+        </span>
+      </div>
+    </form>
+    <button class="navbar-toggler navbar-toogler-left" type="button"
+            (click)="sidebarToggleRight()">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-bar"></span>
+      <span class="navbar-toggler-bar"></span>
+      <span class="navbar-toggler-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-lg-end" id="navbar-warning">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#pk"><i class="nc-icon nc-email-85" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pk"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item ">
+          <div ngbDropdown class="dropdown">
+            <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-settings-gear-65"
+                                                                         aria-hidden="true"></i></a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right">
+              <a class="dropdown-item">Action - 1</a>
+              <a class="dropdown-item">Another Action</a>
+              <a class="dropdown-item">Something else is here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item">Separated link</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

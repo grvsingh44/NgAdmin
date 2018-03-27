@@ -1,0 +1,25 @@
+
+
+@media (min-width: 992px) {
+  .main-panel{
+    .main-content{
+      padding-left: 250px;
+    }
+  }
+
+  .padding-sidebar{
+    padding-left: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper{
+    .navbar-collapse{
+      display: flex;
+    }
+  }
+  .app-sidebar {
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
+
