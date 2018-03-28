@@ -189,7 +189,7 @@
 
 
 :host /deep/ .WidgetlineChart .ct-series-a .ct-line {
-  stroke: url($dashboard1-gradient-path +  #gradient4);
+  stroke: url($dashboard1-gradient-path +  #gradient8);
 }
 // Widget line Chart CSS Ends
 
@@ -230,7 +230,7 @@
     }
 
     &[data-background-color="blue"] {
-      background: linear-gradient(60deg, #26c6da, #00acc1);
+      background: linear-gradient(60deg, #26c6da, #016bc5);
       box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4);
     }
 

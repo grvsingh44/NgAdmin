@@ -403,7 +403,8 @@ export class Dashboard1Component implements OnInit {
           'stop-color': 'rgba(155, 60, 183,1)'
         }).parent().elem('stop', {
           offset: 1,
-          'stop-color': 'rgba(255, 57, 111, 1)'
+          // 'stop-color': 'rgba(255, 57, 111, 1)'
+          'stop-color': 'rgba(255, 106, 0, 1)'
         });
 
       },
@@ -456,63 +457,13 @@ export class Dashboard1Component implements OnInit {
           y2: 0
         }).elem('stop', {
           offset: 0,
-          'stop-color': 'rgba(238, 9, 121,1)'
+          // 'stop-color': 'rgba(238, 9, 121,1)'
+          'stop-color': 'rgba(0, 201, 255, 1)'
         }).parent().elem('stop', {
           offset: 1,
-          'stop-color': 'rgba(255, 106, 0, 1)'
+          'stop-color': 'rgba(146, 179, 254, 1)'
         });
-        // defs.elem('linearGradient', {
-        //   id: 'gradient5',
-        //   x1: 0,
-        //   y1: 1,
-        //   x2: 0,
-        //   y2: 0
-        // }).elem('stop', {
-        //   offset: 0,
-        //   'stop-color': 'rgba(0, 75, 145,1)'
-        // }).parent().elem('stop', {
-        //   offset: 1,
-        //   'stop-color': 'rgba(120, 204, 55, 1)'
-        // });
-        // defs.elem('linearGradient', {
-        //   id: 'gradient6',
-        //   x1: 0,
-        //   y1: 1,
-        //   x2: 0,
-        //   y2: 0
-        // }).elem('stop', {
-        //   offset: 0,
-        //   'stop-color': 'rgba(132, 60, 247,1)'
-        // }).parent().elem('stop', {
-        //   offset: 1,
-        //   'stop-color': 'rgba(56, 184, 242, 1)'
-        // });
-        // defs.elem('linearGradient', {
-        //   id: 'gradient7',
-        //   x1: 0,
-        //   y1: 1,
-        //   x2: 0,
-        //   y2: 0
-        // }).elem('stop', {
-        //   offset: 0,
-        //   'stop-color': 'rgba(155, 60, 183,1)'
-        // }).parent().elem('stop', {
-        //   offset: 1,
-        //   'stop-color': 'rgba(255, 57, 111, 1)'
-        // });
-
       },
-      draw(data: any): void {
-        let barHorizontalCenter, barVerticalCenter, label, value;
-        if (data.type === 'bar') {
-
-          data.element.attr({
-            y1: 195,
-            x1: data.x1 + 0.001
-          });
-
-        }
-      }
     },
   };
   // Line chart configuration Ends
