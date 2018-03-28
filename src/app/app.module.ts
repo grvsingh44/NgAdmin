@@ -17,7 +17,6 @@ import { ChatComponent } from './chat/chat.component';
     AppComponent,
     FullLayoutComponent,
     ContentLayoutComponent,
-    ChatComponent
   ],
   imports: [
     BrowserAnimationsModule,
