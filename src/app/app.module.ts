@@ -9,13 +9,15 @@ import {AppRoutingModule} from './app-routing.module';
 
 import { FullLayoutComponent } from './layouts/full/full-layout.component';
 import { ContentLayoutComponent } from './layouts/content/content-layout.component';
+import { ChatComponent } from './chat/chat.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FullLayoutComponent,
-    ContentLayoutComponent
+    ContentLayoutComponent,
+    ChatComponent
   ],
   imports: [
     BrowserAnimationsModule,
