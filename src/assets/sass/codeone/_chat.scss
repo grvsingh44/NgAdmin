@@ -24,7 +24,6 @@ $sideber-border: #FAFAFA;
     }
 
     form{
-
       .has-icon-left .form-control-position {
         right: auto;
         left: inherit;
@@ -56,8 +55,11 @@ $sideber-border: #FAFAFA;
     width: 300px;
     position: fixed;
     z-index: 999;
-    border-bottom: 1px solid $sideber-border;
-    border-right: 1px solid $sideber-border;
+
+    .form-control{
+      padding-left: 30px;
+    }
+
   }
 
   .users-list-padding{
@@ -77,7 +79,7 @@ $sideber-border: #FAFAFA;
     overflow-y: scroll;
     text-align: center;
     height: calc(100% - 112px);
-    background-color: #fff;
+    background-color: $smoke-bg;
   }
   .chat-app-form{
     position: relative;
@@ -99,7 +101,7 @@ $sideber-border: #FAFAFA;
           height: 0;
           content: '';
           border: 5px solid transparent;
-          border-left-color: $primary-color;
+          border-left-color: $table-line-color;
         }
         +.chat-content:before {
           border-color: transparent;
@@ -176,4 +178,7 @@ $sideber-border: #FAFAFA;
 
 #users-list{
   [class^="icon-"],[class*=" icon-"] { color: $warning-color;}
+  .list-group-item{
+    border: 1px solid #bcc7d0 !important;
+  }
 }
