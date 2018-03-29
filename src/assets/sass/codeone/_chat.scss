@@ -1,5 +1,5 @@
 // Chat variable
-$sideber-border: #FFFCF5;
+$sideber-border: #FAFAFA;
 
 
 .chat-application{
@@ -18,13 +18,44 @@ $sideber-border: #FFFCF5;
     height: calc(100% - 20px);
     border-right: 1px solid #E4E7ED;
     z-index: 999;
+
+    a{
+      cursor: pointer;
+    }
+
+    form{
+
+      .has-icon-left .form-control-position {
+        right: auto;
+        left: inherit;
+      }
+
+      .form-control-position {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+      }
+    }
+
+    .avatar-md{
+      img {
+        width: 40px;
+      }
+    }
+
+
   }
 
   .chat-fixed-search{
     width: 300px;
     position: fixed;
     z-index: 999;
-    background: $white;
     border-bottom: 1px solid $sideber-border;
     border-right: 1px solid $sideber-border;
   }
@@ -38,6 +69,7 @@ $sideber-border: #FFFCF5;
     span{
       font-size: 0.8rem;
       font-weight: 400;
+      color: $info-color;
     }
   }
   .chat-app-window{
@@ -67,7 +99,7 @@ $sideber-border: #FFFCF5;
           height: 0;
           content: '';
           border: 5px solid transparent;
-          border-left-color: theme-color('primary');
+          border-left-color: $primary-color;
         }
         +.chat-content:before {
           border-color: transparent;
@@ -80,7 +112,7 @@ $sideber-border: #FFFCF5;
         margin: 0 20px 10px 0;
         clear: both;
         color: #fff;
-        background-color: theme-color('primary');
+        background-color: $primary-color;
         border-radius: 4px;
         p{
           margin: 0;
@@ -121,7 +153,7 @@ $sideber-border: #FFFCF5;
         text-align: left;
         float: left;
         margin: 0 0 10px 20px;
-        color: theme-color("dark");
+        color: #2e2e2e;
         background-color: $body-bg;
       }
     }
@@ -140,4 +172,8 @@ $sideber-border: #FFFCF5;
     }
   }
 
+}
+
+#users-list{
+  [class^="icon-"],[class*=" icon-"] { color: $warning-color;}
 }
