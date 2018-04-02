@@ -102,22 +102,22 @@ $ps-scrollbar-y-width: 8px !default;
 	}
 }
 
-.chat-app-window{
-  @include ps-container(map-merge($ps-theme-default, (
-    border-radius: $ps-border-radius,
-    rail-default-opacity: $ps-rail-default-opacity,
-    rail-container-hover-opacity: 0,
-    rail-hover-opacity: $ps-rail-hover-opacity,
-    bar-bg: $ps-bar-bg,
-    bar-container-hover-bg: #55595c !important,
-    bar-hover-bg: $ps-bar-hover-bg,
-    rail-hover-bg: $ps-rail-hover-bg,
-    scrollbar-y-rail-right: 20px,
-    scrollbar-y-rail-width: $ps-scrollbar-width,
-    scrollbar-y-right: 20px,
-    scrollbar-y-width: $ps-scrollbar-width,
-  )));
-}
+//#chat-app-content{
+//  @include ps-container(map-merge($ps-theme-default, (
+//    border-radius: $ps-border-radius,
+//    rail-default-opacity: $ps-rail-default-opacity,
+//    rail-container-hover-opacity: 0,
+//    rail-hover-opacity: $ps-rail-hover-opacity,
+//    bar-bg: $ps-bar-bg,
+//    bar-container-hover-bg: #55595c !important,
+//    bar-hover-bg: $ps-bar-hover-bg,
+//    rail-hover-bg: $ps-rail-hover-bg,
+//    scrollbar-y-rail-right: 0px,
+//    scrollbar-y-rail-width: $ps-scrollbar-width,
+//    scrollbar-y-right: 0px,
+//    scrollbar-y-width: $ps-scrollbar-width,
+//  )));
+//}
 
 /* to make scrollbars always visible */
 .always-visible.ps-container > .ps-scrollbar-x-rail,

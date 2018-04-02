@@ -79,10 +79,10 @@ $sideber-border: #FAFAFA;
     }
   }
   .chat-app-window{
-    padding: 20px 30px;
+    padding: 20px 0px;
     text-align: center;
     height: calc(100% - 80px);
-    background-color: $smoke-bg;
+    background-color: $medium-pale-bg;
     position: relative;
   }
   .chat-app-form{
