@@ -1,22 +1,24 @@
-<div class="chat-application" style="border-radius: 12px; border: 1px solid #bcc7d0;">
-  <div class="chat-sidebar float-left d-none d-sm-none d-md-block d-lg-block">
-    <div class="chat-sidebar-content">
-      <div class="chat-fixed-search p-3">
-        <form>
-          <div class="position-relative has-icon-left">
-            <input class="form-control" id="timesheetinput1" name="employeename" type="text">
-            <div class="form-control-position">
-              <i class="ft-user"></i>
+<div class="container-fluid pt-4 pb-4 section-light-gray" style="border-radius: 12px; border: 1px solid #bcc7d0;">
+  <div class="chat-application animate slideInDown">
+    <div class="chat-sidebar float-left d-none d-sm-none d-md-block d-lg-block">
+      <div class="chat-sidebar-content">
+        <div class="chat-fixed-search p-3">
+          <form>
+            <div class="position-relative has-icon-left">
+              <input class="form-control" id="timesheetinput1" name="employeename" type="text">
+              <div class="form-control-position">
+                <i class="ft-user"></i>
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-      <div id="users-list" class="list-group position-relative">
-        <div class="users-list-padding">
-          <a class="list-group-item" (click)="SetActive($event, 'chat1')">
+          </form>
+        </div>
+        <div id="users-list" class="list-group position-relative">
+          <div class="users-list-padding">
+            <a class="list-group-item active" (click)="SetActive($event, 'chat1')">
             <span class="media">
               <span class="avatar avatar-md avatar-online">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-2.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-2.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -32,11 +34,12 @@
                 </p>
               </div>
             </span>
-          </a>
-          <a class="list-group-item no-border" (click)="SetActive($event,'chat2')">
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat2')">
             <span class="media">
               <span class="avatar avatar-md avatar-busy">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-7.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-7.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -53,11 +56,12 @@
                 </p>
               </div>
             </span>
-          </a>
-          <a class="list-group-item no-border" (click)="SetActive($event,'chat3')">
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat3')">
             <span class="media">
               <span class="avatar avatar-md avatar-away">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-8.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-8.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -74,11 +78,12 @@
                 </p>
               </div>
             </span>
-          </a>
-          <a class="list-group-item no-border" (click)="SetActive($event,'chat4')">
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat4')">
             <span class="media">
               <span class="avatar avatar-md avatar-away">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-5.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-5.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -90,11 +95,12 @@
                   <i class="ft-check font-small-2"></i> Will connect you</p>
               </div>
             </span>
-          </a>
-          <a class="list-group-item no-border" (click)="SetActive($event,'chat5')">
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat5')">
             <span class="media">
               <span class="avatar avatar-md avatar-online">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-9.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-9.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -110,11 +116,12 @@
                 </p>
               </div>
             </span>
-          </a>
-          <a class="list-group-item no-border" (click)="SetActive($event,'chat6')">
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat6')">
             <span class="media">
               <span class="avatar avatar-md avatar-busy">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-4.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-4.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -126,11 +133,12 @@
                   <i class="ft-check font-small-2"></i> I love you </p>
               </div>
             </span>
-          </a>
-          <a class="list-group-item no-border" (click)="SetActive($event,'chat7')">
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat7')">
             <span class="media">
               <span class="avatar avatar-md avatar-online">
-                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle" src="assets/img/portrait/small/avatar-s-14.png"
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-14.png"
                      alt="Generic placeholder image">
                 <i></i>
               </span>
@@ -140,71 +148,74 @@
                   <i class="ft-check primary font-small-2"></i> Who you are?</p>
               </div>
             </span>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <section class="chat-app-window" #scrollMe [scrollTop]="scrollMe.scrollHeight">
-    <div class="badge badge-dark mb-1">Chat History</div>
-    <div class="chats">
+    <section class="chat-app-window" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+      <div class="badge badge-dark mb-1">Chat History</div>
       <div class="chats">
-        <div [ngClass]="[chat.chatClass]" *ngFor="let chat of chat">
-          <div class="chat-avatar">
-            <a class="avatar" data-toggle="tooltip" data-placement="[chat.avatar]" title="" data-original-title="">
-              <img [src]="[chat.imagePath]" class="width-50" alt="avatar" />
-            </a>
+        <div class="chats">
+          <div [ngClass]="[chat.chatClass]" *ngFor="let chat of chat">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" data-placement="[chat.avatar]" title="" data-original-title="">
+                <img [src]="[chat.imagePath]" class="width-50" alt="avatar"/>
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content" *ngFor="let message of chat.messages">
+                <p *ngIf="chat.messageType === 'text'">{{ message }}</p>
+                <vg-player *ngIf="chat.messageType === 'audio'">
+                  <audio [vgMedia]="media1" #media1 id="singleAudio" preload="auto" controls>
+                    <source [src]="message" type="audio/mp3">
+                  </audio>
+                </vg-player>
+                <vg-player *ngIf="chat.messageType === 'video'" style="height: 250px; width: 250px">
+                  <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+                    <source [src]="message" type="video/mp4">
+                  </video>
+                </vg-player>
+              </div>
+            </div>
+            <p class="time" *ngIf="chat.time !='' ">{{chat.time}}</p>
           </div>
-          <div class="chat-body">
-            <div class="chat-content" *ngFor="let message of chat.messages">
-              <p *ngIf="chat.messageType === 'text'">{{ message }}</p>
-              <vg-player *ngIf="chat.messageType === 'audio'">
-                <audio [vgMedia]="media1" #media1 id="singleAudio" preload="auto" controls>
-                  <source [src]="message" type="audio/mp3">
-                </audio>
-              </vg-player>
-              <vg-player *ngIf="chat.messageType === 'video'" style="height: 250px; width: 250px">
-                <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-                  <source [src]="message" type="video/mp4">
-                </video>
-              </vg-player>
+
+          <div class="chat" *ngIf="messages.length > 0">
+            <div class="chat-avatar">
+              <a class="avatar" data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                <img src="assets/img/portrait/small/avatar-s-1.png" class="width-50" alt="avatar"/>
+              </a>
+            </div>
+            <div class="chat-body">
+              <div class="chat-content" *ngFor="let message of messages">
+                <p>{{ message }}</p>
+              </div>
             </div>
           </div>
-          <p class="time" *ngIf="chat.time !='' ">{{chat.time}}</p>
-        </div>
 
-        <div class="chat" *ngIf="messages.length > 0">
-          <div class="chat-avatar">
-            <a class="avatar" data-toggle="tooltip" data-placement="right" title="" data-original-title="">
-              <img src="assets/img/portrait/small/avatar-s-1.png" class="width-50" alt="avatar" />
-            </a>
-          </div>
-          <div class="chat-body">
-            <div class="chat-content" *ngFor="let message of messages">
-              <p>{{ message }}</p>
-            </div>
-          </div>
         </div>
-
       </div>
-    </div>
-  </section>
-  <section class="chat-app-form bg-blue-grey bg-lighten-5">
-    <form class="chat-app-input row">
-      <fieldset class="form-group position-relative has-icon-left col-lg-8 col-8 m-0">
-        <div class="form-control-position">
-          <i class="icon-emoticon-smile"></i>
-        </div>
-        <input type="text" class="form-control" id="iconLeft4" placeholder="Type your message" (keydown.enter)="onAddMessage();$event.preventDefault()"
-               #messageInput>
-        <div class="form-control-position control-position-right">
-          <i class="ft-image"></i>
-        </div>
-      </fieldset>
-      <fieldset class="form-group position-relative has-icon-left col-lg-2 col-4 m-0">
-        <button type="button" class="btn btn-raised btn-primary" (click)="onAddMessage()">
-          <i class="fa fa-paper-plane-o hidden-lg-up"></i> Send</button>
-      </fieldset>
-    </form>
-  </section>
+    </section>
+    <section class="chat-app-form bg-blue-grey bg-lighten-5">
+      <form class="chat-app-input row d-flex justify-content-around">
+        <fieldset class="form-group position-relative has-icon-left col-lg-8 col-8 m-0">
+          <div class="form-control-position">
+            <i class="icon-emoticon-smile"></i>
+          </div>
+          <input type="text" class="form-control" id="iconLeft4" placeholder="Type your message"
+                 (keydown.enter)="onAddMessage();$event.preventDefault()"
+                 #messageInput>
+          <div class="form-control-position control-position-right">
+            <i class="ft-image"></i>
+          </div>
+        </fieldset>
+        <fieldset class="form-group position-relative has-icon-left">
+          <button type="button" class="btn btn-raised btn-primary" (click)="onAddMessage()">
+            <i class="fa fa-paper-plane-o hidden-lg-up"></i> Send
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </div>
 </div>

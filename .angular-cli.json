@@ -22,10 +22,12 @@
         "../node_modules/videogular2/fonts/videogular.css",
         "assets/sass/codeone.scss",
         "assets/css/nucleo-icons.css",
+        "../node_modules/animate.css/animate.css",
         "styles.scss"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "assets/js/perfect-scrollbar.jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

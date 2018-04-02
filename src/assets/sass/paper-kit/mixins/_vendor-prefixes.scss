@@ -69,6 +69,14 @@
         transform-origin: $coordinates;
 }
 
+@mixin transition-property($property, $time, $type){
+  -webkit-transition: $property $time $type;
+  -moz-transition: $property $time $type;
+  -o-transition: $property $time $type;
+  -ms-transition: $property $time $type;
+  transition: $property $time $type;
+}
+
 @mixin icon-gradient ($top-color, $bottom-color){
     background: $top-color;
     background: -moz-linear-gradient(top,  $top-color 0%, $bottom-color 100%);
