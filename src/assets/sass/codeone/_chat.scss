@@ -80,10 +80,10 @@ $sideber-border: #FAFAFA;
   }
   .chat-app-window{
     padding: 20px 30px;
-    overflow-y: scroll;
     text-align: center;
-    height: calc(100% - 112px);
+    height: calc(100% - 80px);
     background-color: $smoke-bg;
+    position: relative;
   }
   .chat-app-form{
     position: relative;

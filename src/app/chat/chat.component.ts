@@ -3,7 +3,7 @@ import { Component, ViewChild, ElementRef, OnInit, ChangeDetectionStrategy, Afte
 import { ChatService } from './chat.service';
 import { Chat } from './chat.model';
 
-declare var $: any;
+declare let $: any;
 let sidebarTimer;
 
 @Component({

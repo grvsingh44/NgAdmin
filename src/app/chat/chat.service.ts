@@ -689,4 +689,298 @@ export class ChatService {
       ]
       , 'text'),
   ];
+  public chat8: Chat[] = [
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'How can we help'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '1 hours ago',
+      [
+        'Hey John, I am looking for the best admin template.',
+        'Could you please help me to find it out?',
+        'It should be angular 4 bootstrap compatible.'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'Absolutely!',
+        'Apex admin is the responsive angular 4 bootstrap admin template.'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '20 minutes ago',
+      [
+        'Can you provide me audio link?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'http://static.videogular.com/assets/audios/videogular.mp3'
+      ]
+      , 'audio'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '10 minutes ago',
+      [
+        'Can you provide me video link?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'http://static.videogular.com/assets/videos/videogular.mp4'
+      ]
+      , 'video'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '',
+      [
+        'Looks clean and fresh UI.',
+        'It is perfect for my next project.',
+        'How can I purchase it?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'Thanks, from ThemeForest.'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '',
+      [
+        'I will purchase it for sure.',
+        'Thanks.'
+      ]
+      , 'text'),
+  ];
+  public chat9: Chat[] = [
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'How can we help'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '1 hours ago',
+      [
+        'Hey John, I am looking for the best admin template.',
+        'Could you please help me to find it out?',
+        'It should be angular 4 bootstrap compatible.'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'Absolutely!',
+        'Apex admin is the responsive angular 4 bootstrap admin template.'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '20 minutes ago',
+      [
+        'Can you provide me audio link?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'http://static.videogular.com/assets/audios/videogular.mp3'
+      ]
+      , 'audio'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '10 minutes ago',
+      [
+        'Can you provide me video link?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'http://static.videogular.com/assets/videos/videogular.mp4'
+      ]
+      , 'video'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '',
+      [
+        'Looks clean and fresh UI.',
+        'It is perfect for my next project.',
+        'How can I purchase it?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'Thanks, from ThemeForest.'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '',
+      [
+        'I will purchase it for sure.',
+        'Thanks.'
+      ]
+      , 'text'),
+  ];
+  public chat10: Chat[] = [
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'How can we help'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '1 hours ago',
+      [
+        'Hey John, I am looking for the best admin template.',
+        'Could you please help me to find it out?',
+        'It should be angular 4 bootstrap compatible.'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'Absolutely!',
+        'Apex admin is the responsive angular 4 bootstrap admin template.'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '20 minutes ago',
+      [
+        'Can you provide me audio link?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'http://static.videogular.com/assets/audios/videogular.mp3'
+      ]
+      , 'audio'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '10 minutes ago',
+      [
+        'Can you provide me video link?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'http://static.videogular.com/assets/videos/videogular.mp4'
+      ]
+      , 'video'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '',
+      [
+        'Looks clean and fresh UI.',
+        'It is perfect for my next project.',
+        'How can I purchase it?'
+      ]
+      , 'text'),
+    new Chat(
+      'right',
+      'chat',
+      'assets/img/portrait/small/avatar-s-1.png',
+      '',
+      [
+        'Thanks, from ThemeForest.'
+      ]
+      , 'text'),
+    new Chat(
+      'left',
+      'chat chat-left',
+      'assets/img/portrait/small/avatar-s-14.png',
+      '',
+      [
+        'I will purchase it for sure.',
+        'Thanks.'
+      ]
+      , 'text'),
+  ];
 }

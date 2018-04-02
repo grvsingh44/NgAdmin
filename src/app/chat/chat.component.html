@@ -1,5 +1,5 @@
 <div class="container-fluid pt-4 pb-4 section-light-gray" style="border-radius: 12px; border: 1px solid #bcc7d0;">
-  <div class="chat-application animate slideInDown">
+  <div class="chat-application">
     <div class="chat-sidebar float-left d-none d-sm-none d-md-block d-lg-block">
       <div class="chat-sidebar-content">
         <div class="chat-fixed-search p-3">
@@ -149,13 +149,58 @@
               </div>
             </span>
             </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat8')">
+            <span class="media">
+              <span class="avatar avatar-md avatar-online">
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-14.png"
+                     alt="Generic placeholder image">
+                <i></i>
+              </span>
+              <div class="media-body">
+                <h6 class="list-group-item-heading">Mary Dizon</h6>
+                <p class="list-group-item-text text-muted">
+                  <i class="ft-check primary font-small-2"></i> Who you are?</p>
+              </div>
+            </span>
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat9')">
+            <span class="media">
+              <span class="avatar avatar-md avatar-online">
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-14.png"
+                     alt="Generic placeholder image">
+                <i></i>
+              </span>
+              <div class="media-body">
+                <h6 class="list-group-item-heading">Vincent Nelson</h6>
+                <p class="list-group-item-text text-muted">
+                  <i class="ft-check primary font-small-2"></i> Who you are?</p>
+              </div>
+            </span>
+            </a>
+            <a class="list-group-item no-border" (click)="SetActive($event,'chat10')">
+            <span class="media">
+              <span class="avatar avatar-md avatar-online">
+                <img class="media-object d-flex mr-3 bg-primary height-50 rounded-circle"
+                     src="assets/img/portrait/small/avatar-s-14.png"
+                     alt="Generic placeholder image">
+                <i></i>
+              </span>
+              <div class="media-body">
+                <h6 class="list-group-item-heading">Vincent Nelson</h6>
+                <p class="list-group-item-text text-muted">
+                  <i class="ft-check primary font-small-2"></i> Who you are?</p>
+              </div>
+            </span>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <section class="chat-app-window" #scrollMe [scrollTop]="scrollMe.scrollHeight">
       <div class="badge badge-dark mb-1">Chat History</div>
-      <div class="chats">
+      <div class="chat-app-content">
         <div class="chats">
           <div [ngClass]="[chat.chatClass]" *ngFor="let chat of chat">
             <div class="chat-avatar">
@@ -197,7 +242,7 @@
         </div>
       </div>
     </section>
-    <section class="chat-app-form bg-blue-grey bg-lighten-5">
+    <section class="chat-app-form section-light-blue">
       <form class="chat-app-input row d-flex justify-content-around">
         <fieldset class="form-group position-relative has-icon-left col-lg-8 col-8 m-0">
           <div class="form-control-position">
