@@ -4,7 +4,7 @@ import { ChatService } from './chat.service';
 import { Chat } from './chat.model';
 
 declare let $: any;
-let sidebarTimer;
+
 
 @Component({
   selector: 'app-chat',
@@ -68,108 +68,4 @@ export class ChatComponent implements OnInit {
     }
 
   }
-
-
-  // // moviing tab added
-  //
-  // ngAfterViewInit() {
-  //   // init Moving Tab after the view is initialisez
-  //   setTimeout(() => {
-  //     if (mda.movingTabInitialised === false) {
-  //       mda.initMovingTab();
-  //       mda.movingTabInitialised = true;
-  //     }
-  //   }, 10);
-  // }
 }
-
-// const mda: any = {
-//   movingTab: '<div class="chat-moving-tab"/>',
-//   isChild: false,
-//   sidebarMenuActive: '',
-//   movingTabInitialised: false,
-//   distance: 0,
-//
-//   setMovingTabPosition: function($currentActive) {
-//     $currentActive = mda.sidebarMenuActive;
-//     mda.distance = $currentActive.parent().position().top - 10;
-//     mda.moveTab();
-//   },
-//   initMovingTab: function () {
-//     mda.movingTab = $(mda.movingTab);
-//     mda.sidebarMenuActive = $('.chat-application .chat-sidebar-content > a.list-group-item > .media');
-//
-//     if (mda.sidebarMenuActive.length !== 0) {
-//       mda.setMovingTabPosition(mda.sidebarMenuActive);
-//     } else {
-//       // mda.sidebarMenuActive = $('.sidebar .nav-container .nav > li.active .collapse li.active > a');
-//       // mda.isChild = true;
-//       // this.setParentCollapse();
-//     }
-//
-//     mda.sidebarMenuActive.addClass('visible');
-//     const button_text = mda.sidebarMenuActive.html();
-//     mda.movingTab.html(button_text);
-//
-//     $('.chat-application .chat-sidebar-content .list-group').append(mda.movingTab);
-//
-//     $('.chat-application .chat-sidebar-content .list-group > a.active').click(function () {
-//       mda.sidebarMenuActive = $(this);
-//       const parent = $(this).parent();
-//
-//       // we call the animation of the moving tab
-//       clearTimeout(sidebarTimer);
-//       let $currentActive = mda.sidebarMenuActive;
-//       mda.sidebarMenuActive.removeClass('visible');
-//       const $movingTab = mda.movingTab;
-//       $movingTab.addClass('moving');
-//       $movingTab.css('padding-left', $currentActive.css('padding-left'));
-//       const button_text = $currentActive.html();
-//       const $currentActive = mda.sidebarMenuActive;
-//       mda.distance = $currentActive.parent().position().top - 10;
-//
-//       mda.moveTab();
-//
-//       sidebarTimer = setTimeout(function() {
-//         $movingTab.removeClass('moving');
-//         $currentActive.parent().addClass('visible');
-//       }, 650);
-//       setTimeout(function() {
-//         $movingTab.html(button_text);
-//       }, 10);
-//
-//     });
-//
-//   },
-//   animateMovingTab: function() {
-//     clearTimeout(sidebarTimer);
-//     const $currentActive = mda.sidebarMenuActive;
-//     console.log('ActiveMenu', $currentActive);
-//     $('.chat-application .chat-sidebar-content > a.list-group-item').removeClass('visible');
-//     const $movingTab = mda.movingTab;
-//     $movingTab.addClass('moving');
-//
-//     $movingTab.css('padding-left', $currentActive.css('padding-left'));
-//     const button_text = $currentActive.html();
-//
-//     mda.setMovingTabPosition($currentActive);
-//
-//     sidebarTimer = setTimeout(function() {
-//       $movingTab.removeClass('moving');
-//       $currentActive.parent().addClass('visible');
-//     }, 650);
-//
-//     setTimeout(function() {
-//       $movingTab.html(button_text);
-//     }, 10);
-//   },
-//   moveTab: function() {
-//     mda.movingTab.css({
-//       'transform': 'translate3d(0px,' + mda.distance + 'px, 0)',
-//       '-webkit-transform': 'translate3d(0px,' + mda.distance + 'px, 0)',
-//       '-moz-transform': 'translate3d(0px,' + mda.distance + 'px, 0)',
-//       '-ms-transform': 'translate3d(0px,' + mda.distance + 'px, 0)',
-//       '-o-transform': 'translate3d(0px,' + mda.distance + 'px, 0)'
-//     });
-//   }
-// };

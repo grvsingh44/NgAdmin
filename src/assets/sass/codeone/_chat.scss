@@ -79,9 +79,9 @@ $sideber-border: #FAFAFA;
     }
   }
   .chat-app-window{
-    padding: 20px 0px;
+    padding: 20px 20px;
     text-align: center;
-    height: calc(100% - 80px);
+    height: calc(100% - 132px);
     background-color: $medium-pale-bg;
     position: relative;
   }
@@ -189,7 +189,7 @@ $sideber-border: #FAFAFA;
   }
   @include media-breakpoint-down(sm) {
     .chat-app-window{
-      height: calc(100% - 132px);
+      height: calc(100% - 90px);
     }
   }
 

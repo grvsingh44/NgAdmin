@@ -198,9 +198,19 @@
         </div>
       </div>
     </div>
+    <div class="chat-name p-2 bg-white">
+      <div class="media">
+        <span class="chat-app-sidebar-toggle ft-align-justify font-large-1 mr-2 d-none d-block d-sm-block d-md-none"></span>
+        <div class="media-body">
+          <img alt="avatar" class="rounded-circle mr-1" width="37" src="assets/img/portrait/small/avatar-s-7.png">
+          <span>Kristopher Candy</span>
+          <i class="ft-more-vertical float-right mt-1"></i>
+        </div>
+      </div>
+    </div>
     <section class="chat-app-window" #scrollMe [scrollTop]="scrollMe.scrollHeight">
       <div class="badge badge-dark mb-1">Chat History</div>
-      <div id="chat-app-content" class="ps-theme-dark">
+      <div id="chat-app-content" class="">
         <div class="chats">
           <div [ngClass]="[chat.chatClass]" *ngFor="let chat of chat">
             <div class="chat-avatar">
