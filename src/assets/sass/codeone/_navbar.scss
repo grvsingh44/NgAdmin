@@ -1,4 +1,6 @@
 .navbar{
+  z-index: 999 !important;
+  box-shadow: 0 1px 15px 1px rgba(69,65,78,.1) !important;
   &.navbar-transparent{
     padding-top: 0 !important;
     .padding-sidebar{

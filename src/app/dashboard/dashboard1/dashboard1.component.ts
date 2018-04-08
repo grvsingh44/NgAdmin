@@ -14,6 +14,12 @@ export interface Chart {
   events?: ChartEvent;
 }
 
+declare interface TableData {
+  headerRow: string[];
+  dataRows: string[][];
+  class: string;
+}
+
 @Component({
   selector: 'app-dashboard1',
   templateUrl: './dashboard1.component.html',
@@ -429,7 +435,7 @@ export class Dashboard1Component implements OnInit {
     type: 'Line', data: data['WidgetlineChart'],
     options: {
       axisX: {
-        showGrid: true,
+        showGrid: false,
         showLabel: false,
         scaleMinSpace: 40,
         stretch: true,
@@ -453,22 +459,37 @@ export class Dashboard1Component implements OnInit {
           id: 'gradient8',
           x1: 0,
           y1: 1,
-          x2: 0,
+          x2: 1,
           y2: 0
         }).elem('stop', {
           offset: 0,
           // 'stop-color': 'rgba(238, 9, 121,1)'
-          'stop-color': 'rgba(0, 201, 255, 1)'
+          'stop-color': 'rgb(167,112,239)'
+        }).parent().elem('stop', {
+          offset: 0.5,
+          'stop-color': 'rgb(207,139,243)'
         }).parent().elem('stop', {
           offset: 1,
-          'stop-color': 'rgba(146, 179, 254, 1)'
+          'stop-color': 'rgb(253,185,155)'
         });
       },
     },
   };
   // Line chart configuration Ends
 
+  public tableData1: TableData;
+
   public ngOnInit() {
+
+    this.tableData1 = {
+      headerRow: [ '#', 'Name', 'Position', 'Project', 'Since', 'Project Cost', 'Actions'],
+      dataRows: [
+        ['1', 'Andrew Mike', 'PHP Developer', 'Magento', '2013', '99,225', ''],
+        ['2', 'John Doe', 'PHP Developer', 'CakePHP', '2012', '89,241', ''],
+        ['3', 'Alex Mike', 'Angular Developer', 'Angular', '2010', '92,144', '']
+      ],
+      class: ''
+    };
 
     // Line area chart 2 configuration Starts
     // lineArea2: Chart = {

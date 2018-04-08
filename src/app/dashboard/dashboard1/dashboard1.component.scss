@@ -202,14 +202,12 @@
   width:100%;
   margin:25px 0;
   box-shadow:0 1px 4px 0 rgba(0,0,0,0.14);
-  //border-radius:6px;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   color: rgba(0,0,0, 0.87);
   background: #fff;
   overflow:visible;
-
-  //.card-header.card-header-icon {
-  //  float: left;
-  //}
 
   .card-header {
     padding: 0.75rem 1.25rem;
@@ -242,6 +240,10 @@
   }
 
   &.card-header-raised{
+    .card-header-icon{
+      float: left;
+      line-height: 1.7rem;
+    }
     [data-background-color] {
       margin: -21px 15px 0;
       border-radius: 6px;

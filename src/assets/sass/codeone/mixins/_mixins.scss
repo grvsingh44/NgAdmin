@@ -10,6 +10,12 @@
   }
 }
 
+@mixin card-shadow(){
+  -webkit-box-sizing: 0 1px 15px 1px rgba(69, 65, 78, 0.1);
+  -moz-box-sizing: 0 1px 15px 1px rgba(69, 65, 78, 0.1);
+  box-sizing: 0 1px 15px 1px rgba(69, 65, 78, 0.1);
+}
+
 
 // Chartist mixin
 // Scales for responsive SVG containers
